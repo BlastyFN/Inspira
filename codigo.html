@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poder</title>
+    <title>Iniciar Sesi&oacute;n</title>
     <style>
         :root{
              --blue-i: #26CAD3;
@@ -25,7 +25,7 @@
         }
         .login{
             width: 100%;
-            height: auto;
+            height: 100vh;
             /* padding-top: 25%;
             padding-bottom: 25%; */
             display: flex;
@@ -42,10 +42,7 @@
             align-content: center;
             background-color: var(--blue-i);
             width: 40%;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            position: fixed;
+            
             
         }
         .right{
@@ -55,13 +52,13 @@
             height: 100%;
             background-color: var(--pruple-i);
             width: 60%;
-            margin-left: auto;
+            
         }
 
         .ns-logo{
             width: 40%;
             height:auto;
-
+            margin-left: 30%;
         }
 
         .title{
@@ -84,8 +81,6 @@
             margin-left: 20%;
             margin-right: 20%;
             border-style: none;
-            box-sizing: content-box;
-            background-color: white;
         }
         
 
@@ -95,16 +90,13 @@
             padding: 10px;
             font-size: 1.5rem;
             margin-top: 32px;
-            margin-bottom: 32px;
             border-radius: 10px;
             width: 40%;
             margin-right: auto;
             margin-left: auto;
             cursor: grab;
             border-style: none;
-
         }
-
 
         @media(max-width: 1000px){
             .login{
@@ -113,7 +105,6 @@
             }
             .left{
                 width: 100%;
-                position: static;
             }
             .right{
                 width: 100%;
@@ -124,33 +115,15 @@
 <body>
     <section class="login">
         <div class="left">
-            <div class="left-elements">
-                <img src="assets/logo.png" alt="logo" class="ns-logo">
-                <h1>BIENVENID@ A <br> "EL PODER DE SER TU MISM@"</h1>
-            </div>
+            <img src="assets/logo.png" alt="logo" class="ns-logo">
+            <h1>BIENVENID@ AL SISTEMA DE GESTIÓN DE MI CENTRO INSPIRADOR</h1>
         </div>
         <div class="right">
-            <h1 class="title">REGISTRO</h1>
-            <label for="names" class="label">Nombre(s)</label>
-            <input type="text" class="input input-name" id="name">
-            <label for="flastname" class="label">Primer apellido</label>
-            <input type="text" class="input input-lastname" id="flastname">
-            <label for="slastname" class="label">Segundo apellido</label>
-            <input type="text" class="input input-lastname" id="slastname">
-            <label for="email" class="label">Correo</label>
-            <input type="email" class="input input-email" id="email">
-            <label for="phone" class="label">Celular</label>
-            <input type="text" class="input input-phone" id="phone">
-            <label for="birthday" class="label">Fecha de nacimiento</label>
-            <input type="date" class="input input-bday" id="birthday">
-            <label for="center" class="label">Centro Inspira</label>
-            <select id="center" class="input input-center">
+            <h1 class="title">ENVIAMOS UN C&Oacute;DIGO DE CONFIRMACI&Oacute;N A TU CORREO ELECTR&Oacute;NICO</h1>
+            <label for="code" class="label">C&oacute;digo</label>
+            <input type="text" class="input input-codigo" id="code">
 
-            </select>
-
-                
-            </select>
-            <input type="submit" class="yellow-button" id="submit" value="REGISTRAR">
+            <input type="submit" class="yellow-button" id="submit" value="VERIFICAR">
         </div>
     </section>
 </body>
