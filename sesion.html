@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesi&oacute;n</title>
+    <style>
+        :root{
+             --blue-i: #26CAD3;
+             --pruple-i: #9F1B96;
+             --gray-i: #747678;
+             --yellow-i: #F4C500;
+        }
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--pruple-i);
+            position:relative;
+            color: white;
+        }
+        h1{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3rem;
+        }
+        .login{
+            width: 100%;
+            height: 100vh;
+            /* padding-top: 25%;
+            padding-bottom: 25%; */
+            display: flex;
+            background-size: cover;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        .left{
+            /* text-align: center; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            background-color: var(--blue-i);
+            width: 40%;
+            
+            
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            background-color: var(--pruple-i);
+            width: 60%;
+            
+        }
+
+        .ns-logo{
+            width: 40%;
+            height:auto;
+            margin-left: 30%;
+        }
+
+        .title{
+            margin-bottom: 10px;
+        }
+
+        .label{
+            font-size: 1.5rem;
+            font-weight:bold;
+            align-self: flex-start;
+            padding: 16px;
+            margin-left: 20%;
+        }
+
+        .input{
+            border-radius: 10px;
+            font-size: 1.5rem;
+            padding: 10px;
+            width: 60%;
+            margin-left: 20%;
+            margin-right: 20%;
+            border-style: none;
+        }
+        
+
+        .yellow-button{
+            background-color: var(--yellow-i);
+            font-weight: bold;
+            padding: 10px;
+            font-size: 1.5rem;
+            margin-top: 32px;
+            border-radius: 10px;
+            width: 40%;
+            margin-right: auto;
+            margin-left: auto;
+            cursor: grab;
+            border-style: none;
+        }
+
+        @media(max-width: 1000px){
+            .login{
+                flex-direction: column;
+                height: auto;
+            }
+            .left{
+                width: 100%;
+            }
+            .right{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="login">
+        <div class="left">
+            <img src="assets/logo.png" alt="logo" class="ns-logo">
+            <h1>BIENVENID@ AL SISTEMA DE GESTIÓN DE MI CENTRO INSPIRADOR</h1>
+        </div>
+        <div class="right">
+            <h1 class="title">INICIO DE SESI&Oacute;N</h1>
+            <label for="email" class="label">Correo</label>
+            <input type="email" class="input input-email" id="email">
+
+            <label for="password" class="label">Contraseña</label>
+            <input type="password" class="input input-password" id="password">
+            <input type="submit" class="yellow-button" id="submit" value="INGRESAR">
+        </div>
+    </section>
+</body>
+</html>
