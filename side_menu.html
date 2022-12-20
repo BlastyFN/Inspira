@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        :root{
+             --blue-i: #26CAD3;
+             --pruple-i: #9F1B96;
+             --gray-i: #747678;
+             --yellow-i: #F4C500;
+        }
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+        }
+        h1{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        aside{
+            align-content: center;
+            position: fixed;
+            background-color: var(--blue-i);
+            width: 40vh;
+            height: 88vh;
+            margin-top:12vh;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+        }
+
+        aside ul{
+            padding: 0;
+            
+        }
+        aside ul li{
+            padding: 0 15px 0 15px;
+            list-style: none;
+            margin-bottom: 0.5rem;
+            display: flex;
+            cursor: grab;
+        }
+
+        aside ul li:hover{
+            background-color: var(--yellow-i);
+        }
+        
+        aside ul li img{
+            width: 50px;
+            height: auto;
+        }
+
+        aside ul li p{
+            padding-left: 1rem;
+            font-size: large;
+            font-weight:300;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <aside>
+        <ul>
+            <li>
+                <img src="assets/voluntarios.svg" alt="voluntarios">
+                <p>Voluntariado</p>
+            </li>
+            <li>
+                <img src="assets/finanzas.svg" alt="voluntarios">
+                <p>Finanzas</p>
+            </li>
+            <li>
+                <img src="assets/stats.svg" alt="voluntarios">
+                <p>Estad&iacute;sticas</p>
+            </li>
+            <li>
+                <img src="assets/servicio.svg" alt="voluntarios">
+                <p>Servicio Social</p>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <img src="assets/usuario.svg" alt="voluntarios">
+                <p>Mi perfil</p>
+            </li>
+            <li>
+                <img src="assets/salida.svg" alt="voluntarios">
+                <p>Cerrar sesi&oacute;n</p>
+            </li>
+        </ul>
+    </aside>
+</body>
+</html>
