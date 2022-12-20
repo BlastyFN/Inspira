@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        :root{
+             --blue-i: #26CAD3;
+             --pruple-i: #9F1B96;
+             --gray-i: #747678;
+             --yellow-i: #F4C500;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+        }
+        h1{
+            font-family: 'Bebas Neue', cursive;;
+        }
+        .content{
+            margin-top: 12vh;
+        }
+        .main-tittle{
+            text-align: center;
+            font-size: 3rem;
+        }
+        .search-bar{
+            display: flex;
+        }
+        .options{
+            width: 75%;
+            margin-left: 5%;
+        }
+        .submit{
+            display: flex;
+            width: 15%;
+            margin-right: 5%;
+        }
+        .top-filters{
+            display: flex;
+            justify-content: space-between;
+        }
+        .bot-filters{
+            display: flex;
+        }
+        .filter{
+            margin: 1vh;
+            padding: 1vh;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 4vh;
+        }
+
+        .text-filter{
+            width: 100%;
+            border-radius: 1vh;
+            border-style: solid;
+            border-color:var(--pruple-i);
+            border-width: 0.5vh;
+        }
+
+        .btn-filter{
+            width: 25%;
+            border-radius: 1vh;
+            border-style: solid;
+            border-color:var(--blue-i);
+            border-width: 0.5vh;
+            cursor: grab;
+        }
+        .btn-inactive{
+            background-color: white;
+            color: black;
+        }
+        .btn-inactive:hover{
+            background-color: var(--blue-i);
+            color: white;
+        }
+
+        .btn-active{
+            
+            background-color: var(--blue-i);
+            color: white;
+        }
+        .btn-active:hover{
+            background-color: white;
+            color: black;
+        }
+        .select-filter{
+            width: 40%;
+            border-radius: 1vh;
+            border-style: solid;
+            border-color:var(--pruple-i);
+            border-width: 0.5vh;
+        }
+
+        .search-button{
+            width: 100%;
+            border-radius: 1vh;
+            border-style: solid;
+            border-color:var(--blue-i);
+            border-width: 0.5vh;
+            cursor: grab;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="content">
+        <h1 class="main-tittle">SERVICIO SOCIAL</h1>
+        <div class="search-bar">
+            <div class="options">
+                <div class="top-filters">
+                    <select name="generation" class="filter select-filter" id="genSelect">
+                        <option disabled selected>Generaci&oacute;n</option>
+                    </select>
+                    <button class="filter btn-filter btn-inactive">Activos</button>
+                    <button class="filter btn-filter btn-inactive">Inactivos</button>
+                </div>
+                <div class="bot-filters">
+                    <input class="filter text-filter" type="text" placeholder="Nombre">
+                </div>
+
+            </div>
+            <div class="submit">
+                <button class="search-button filter btn-inactive">BUSCAR</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
