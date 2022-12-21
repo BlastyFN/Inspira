@@ -35,7 +35,7 @@
         .search-bar{
             display: flex;
         }
-        .options{
+        .option-filters{
             width: 75%;
             margin-left: 5%;
         }
@@ -99,7 +99,15 @@
             border-color:var(--pruple-i);
             border-width: 0.5vh;
         }
+        .select-filter option{
+            background-color:var(--pruple-i);
+            color: white;
+        }
 
+        .select-filter option:disabled{
+            background-color:gray;
+            color: white;
+        }
         .search-button{
             width: 100%;
             border-radius: 1vh;
@@ -109,16 +117,58 @@
             cursor: grab;
         }
 
+        .main-content{
+            margin-left: 5%;
+            margin-right: 5%;
+            display: flex;
+            
+        }
+        .content-table{
+            width: 100%;
+            margin: 1vh;
+            font-size: 3vh;
+            border-collapse: collapse;
+        }
+        .content-table thead{
+            color: white;
+            background-color: var(--pruple-i);
+        }
+
+        .content-table thead th{
+            text-align: start;
+            padding: 1vh;
+        }
+
+        .content-table tbody td{
+            text-align: start;
+            padding: 1vh;
+        }
+        .content-table  tbody tr:nth-child(even) {
+            background-color: white;
+        }
+
+        .content-table tbody tr:nth-child(odd) {
+            background-color: var(--blue-i);
+            
+        }  
+
+        .content-table  tbody tr:hover {
+            background-color:var(--yellow-i);
+            cursor: grab;
+        }
+
     </style>
 </head>
 <body>
     <section class="content">
         <h1 class="main-tittle">SERVICIO SOCIAL</h1>
         <div class="search-bar">
-            <div class="options">
+            <div class="option-filters">
                 <div class="top-filters">
                     <select name="generation" class="filter select-filter" id="genSelect">
                         <option disabled selected>Generaci&oacute;n</option>
+                        <option value="Queso">Queso</option>
+                        <option value="Queso">Queso</option>
                     </select>
                     <button class="filter btn-filter btn-inactive">Activos</button>
                     <button class="filter btn-filter btn-inactive">Inactivos</button>
@@ -132,6 +182,44 @@
                 <button class="search-button filter btn-inactive">BUSCAR</button>
             </div>
         </div>
+        <div class="main-content">
+            <table class="content-table">
+                <thead class="table-tittles">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Correo</th>
+                        <th>Tel&eacute;fono</th>
+                        <th>Cumpleaños</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Eduardo Marcelino</td>
+                        <td>Figueroa Navarro</td>
+                        <td>eduardofina7@gmail.com</td>
+                        <td>3311177391</td>
+                        <td>06/07/2002</td>
+                    </tr>
+                    <tr>
+                        <td>Mariano Alejandro</td>
+                        <td>Macías Vázquez</td>
+                        <td>marianomariano@gmail.com</td>
+                        <td>3311188271</td>
+                        <td>01/10/1998</td>
+                    </tr>
+                    <tr>
+                        <td>Luis</td>
+                        <td>Maravilla</td>
+                        <td>luismaravilla@gmail.com</td>
+                        <td>3311188271</td>
+                        <td>01/10/1998</td>
+                    </tr>
+                <tbody>
+            </table>
+        </div>
+        
+
     </section>
 </body>
 </html>
