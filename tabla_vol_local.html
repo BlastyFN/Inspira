@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicio Social</title>
+    <title>VOLUNTARIADO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
@@ -67,7 +67,7 @@
         }
 
         .btn-filter{
-            width: 25%;
+            width: 50%;
             border-radius: 1vh;
             border-style: solid;
             border-color:var(--blue-i);
@@ -92,22 +92,7 @@
             background-color: white;
             color: black;
         }
-        .select-filter{
-            width: 40%;
-            border-radius: 1vh;
-            border-style: solid;
-            border-color:var(--pruple-i);
-            border-width: 0.5vh;
-        }
-        .select-filter option{
-            background-color:var(--pruple-i);
-            color: white;
-        }
 
-        .select-filter option:disabled{
-            background-color:gray;
-            color: white;
-        }
         .search-button{
             width: 100%;
             border-radius: 1vh;
@@ -143,17 +128,19 @@
             text-align: start;
             padding: 1vh;
         }
-        .content-table  tbody tr:nth-child(even) {
-            background-color: white;
-        }
-
-        .content-table tbody tr:nth-child(odd) {
-            background-color: var(--blue-i);
+        .content-table tbody tr:nth-child(even) {
+            /* s */
             
-        }  
+            border-bottom-style: solid;
+            border-top-style: solid;
+            border-width: 0.5vh;
+            border-color: var(--blue-i);
+            
+        }   
 
         .content-table  tbody tr:hover {
-            background-color:var(--yellow-i);
+            background-color:var(--blue-i);
+            color: white;
             cursor: grab;
         }
 
@@ -161,16 +148,12 @@
 </head>
 <body>
     <section class="content">
-        <h1 class="main-tittle">SERVICIO SOCIAL</h1>
+        <h1 class="main-tittle">EL PODER DE SER TU MISM@</h1>
         <div class="search-bar">
             <div class="option-filters">
                 <div class="top-filters">
-                    <select name="generation" class="filter select-filter" id="genSelect">
-                        <option disabled selected>Generaci&oacute;n</option>
-                        <option value="Queso">Queso</option>
-                        <option value="Queso">Queso</option>
-                    </select>
-                    <button class="filter btn-filter btn-inactive">Activos</button>
+
+                    <button class="filter btn-filter btn-active">Activos</button>
                     <button class="filter btn-filter btn-inactive">Inactivos</button>
                 </div>
                 <div class="bot-filters">
