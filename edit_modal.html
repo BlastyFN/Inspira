@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        :root{
+             --blue-i: #26CAD3;
+             --pruple-i: #9F1B96;
+             --gray-i: #747678;
+             --yellow-i: #F4C500;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+        }
+        h1{
+            font-family: 'Bebas Neue', cursive;
+        }
+        .modal{
+            background-color: var(--pruple-i);
+            width: 50%;
+            margin: auto;
+            border-radius: 2rem;
+            position: absolute;
+            text-align: center;
+
+        }
+        .modal h1{
+            font-size: 2rem;
+            color: white;
+            font-weight: lighter;
+            margin: 0.5em;
+
+        }
+        .modal label{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2rem;
+            color: white;
+            font-weight: lighter;
+            margin: 0.5em;
+        }
+
+        .modal input{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.5rem;
+            color: black;
+            font-weight: lighter;
+            margin: 0.5em;
+            width: 70%;
+            border-radius: 10px;
+            border-style: none;
+        }
+        .confirm{
+            margin-top: 2em;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 2em;
+        }
+        .confirm button{
+            font-size: 2.5rem;
+            border-radius: 1rem;
+            font-family: 'Bebas Neue', cursive;;
+            color: white;
+            width: 30%;
+            cursor: grab;
+        }
+
+        .confirm button:hover{
+            border-color: white;
+        }
+
+        .btn-no{
+            background-color: #d3635f;
+        }
+
+        .btn-yes{
+            background-color: #5ccb74;
+        }
+
+        .switchBtn {
+            position: relative;
+            display: inline-block;
+            width: 30%;
+            height: 40px;
+        }   
+        /* .switchBtn input {display:none;} */
+        .slide {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+            padding: 0px;
+            color: #fff;
+        }
+        .slide:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 10px;
+            bottom: 6px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked + .slide {
+            background-color: #5ccb74;
+        }
+        input:focus + .slide {
+            box-shadow: 0 0 1px #01aeed;
+        }
+        input:checked + .slide:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(200px);
+            left: -10px;
+        }
+
+        .slide.round {
+            border-radius: 34px;
+        }
+        .slide.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <section class="modal">
+        <h1 id="ss_name">MARIANO ALEJANDRo</h1>
+        <h1 id="ss_lastname">MACÍAS VAZQUEZ</h1>
+        <label for="email" class="label">Correo</label>
+            <input type="email" class="input input-email" id="email">
+        <label for="phone" class="label">Celular</label>
+            <input type="text" class="input input-phone" id="phone">
+        <label for="estado">Estado</label>
+        <label class="switchBtn">
+            <input type="checkbox" name="estado">
+            <div class="slide round">InActiv@</div>
+        </label>
+        <div class="confirm">
+            <button class="btn-no">DESCARTAR</button>
+            <button class="btn-yes">GUARDAR</button>
+        </div>
+    </section>
+</body>
+</html>
