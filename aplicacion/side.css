@@ -1,0 +1,39 @@
+aside{
+    color: white;
+    align-content: center;
+    position: fixed;
+    background-color: var(--blue-i);
+    width: 40vh;
+    height: 88vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+aside ul{
+    padding: 0;
+    
+}
+aside ul li{
+    padding: 0 15px 0 15px;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    display: flex;
+    cursor: grab;
+}
+
+aside ul li:hover{
+    background-color: var(--yellow-i);
+}
+
+aside ul li img{
+    width: 50px;
+    height: auto;
+}
+
+aside ul li p{
+    padding-left: 1rem;
+    font-size: large;
+    font-weight:300;
+}

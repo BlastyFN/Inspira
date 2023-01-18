@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--pruple-i);
+    position:relative;
+    color: white;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+.login{
+    width: 100%;
+    height: auto;
+    /* padding-top: 25%;
+    padding-bottom: 25%; */
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    
+}
+.left{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--blue-i);
+    width: 40%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--pruple-i);
+    width: 60%;
+    margin-left: auto;
+}
+
+.ns-logo{
+    width: 40%;
+    height:auto;
+
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+.label{
+    font-size: 1.5rem;
+    font-weight:bold;
+    align-self: flex-start;
+    padding: 16px;
+    margin-left: 20%;
+}
+
+.input{
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: none;
+    box-sizing: content-box;
+    background-color: white;
+}
+
+
+.yellow-button{
+    background-color: var(--yellow-i);
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border-radius: 10px;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: grab;
+    border-style: none;
+
+}
+
+
+@media(max-width: 1000px){
+    .login{
+        flex-direction: column;
+        height: auto;
+    }
+    .left{
+        width: 100%;
+        position: static;
+    }
+    .right{
+        width: 100%;
+    }
+}

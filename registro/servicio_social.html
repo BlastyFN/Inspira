@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Social</title>
+    <style>
+        :root{
+             --blue-i: #26CAD3;
+             --pruple-i: #9F1B96;
+             --gray-i: #747678;
+             --yellow-i: #F4C500;
+        }
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--pruple-i);
+            position:relative;
+            color: white;
+        }
+        h1{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3rem;
+        }
+        .login{
+            width: 100%;
+            height: auto;
+            /* padding-top: 25%;
+            padding-bottom: 25%; */
+            display: flex;
+            background-size: cover;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        .left{
+            /* text-align: center; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            background-color: var(--blue-i);
+            width: 40%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            position: fixed;
+            
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            background-color: var(--pruple-i);
+            width: 60%;
+            margin-left: auto;
+        }
+
+        .ns-logo{
+            width: 40%;
+            height:auto;
+
+        }
+
+        .title{
+            margin-bottom: 10px;
+        }
+
+        .label{
+            font-size: 1.5rem;
+            font-weight:bold;
+            align-self: flex-start;
+            padding: 16px;
+            margin-left: 20%;
+        }
+
+        .input{
+            border-radius: 10px;
+            font-size: 1.5rem;
+            padding: 10px;
+            width: 60%;
+            margin-left: 20%;
+            margin-right: 20%;
+            border-style: none;
+            box-sizing: content-box;
+            background-color: white;
+        }
+        
+
+        .yellow-button{
+            background-color: var(--yellow-i);
+            font-weight: bold;
+            padding: 10px;
+            font-size: 1.5rem;
+            margin-top: 32px;
+            margin-bottom: 32px;
+            border-radius: 10px;
+            width: 40%;
+            margin-right: auto;
+            margin-left: auto;
+            cursor: grab;
+            border-style: none;
+
+        }
+
+
+        @media(max-width: 1000px){
+            .login{
+                flex-direction: column;
+                height: auto;
+            }
+            .left{
+                width: 100%;
+                position: static;
+            }
+            .right{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="login">
+        <div class="left">
+            <div class="left-elements">
+                <img src="../assets/logo.png" alt="logo" class="ns-logo">
+                <h1>BIENVENID@ A TU SERVICIO SOCIAL</h1>
+            </div>
+        </div>
+        <div class="right">
+            <h1 class="title">REGISTRO</h1>
+            <label for="names" class="label">Nombre(s)</label>
+            <input type="text" class="input input-name" id="name">
+            <label for="flastname" class="label">Primer apellido</label>
+            <input type="text" class="input input-lastname" id="flastname">
+            <label for="slastname" class="label">Segundo apellido</label>
+            <input type="text" class="input input-lastname" id="slastname">
+            <label for="email" class="label">Correo</label>
+            <input type="email" class="input input-email" id="email">
+            <label for="phone" class="label">Celular</label>
+            <input type="text" class="input input-phone" id="phone">
+            <label for="birthday" class="label">Fecha de nacimiento</label>
+            <input type="date" class="input input-bday" id="birthday">
+            <label for="center" class="label">Centro Inspira</label>
+            <select id="center" class="input input-center">
+
+            </select>
+            <label for="school" class="label">Escuela</label>
+            <select id="school" class="input input-school">
+            
+            </select>
+            <input type="submit" class="yellow-button" id="submit" value="REGISTRAR">
+        </div>
+    </section>
+</body>
+</html>

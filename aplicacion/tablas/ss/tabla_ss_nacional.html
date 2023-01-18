@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOLUNTARIADO</title>
+    <title>Servicio </title>
+    <link rel="stylesheet" href="../tables.css">
+    <link rel="stylesheet" href="../quadFilter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
@@ -32,132 +34,31 @@
             text-align: center;
             font-size: 3rem;
         }
-        .search-bar{
-            display: flex;
-        }
-        .option-filters{
-            width: 75%;
-            margin-left: 5%;
-        }
-        .submit{
-            display: flex;
-            width: 15%;
-            margin-right: 5%;
-        }
-        .top-filters{
-            display: flex;
-            justify-content: space-between;
-        }
-        .bot-filters{
-            display: flex;
-        }
-        .filter{
-            margin: 1vh;
-            padding: 1vh;
-            font-family: 'Bebas Neue', cursive;
-            font-size: 4vh;
-        }
 
-        .text-filter{
-            width: 100%;
-            border-radius: 1vh;
-            border-style: solid;
-            border-color:var(--pruple-i);
-            border-width: 0.5vh;
-        }
-
-        .btn-filter{
-            width: 50%;
-            border-radius: 1vh;
-            border-style: solid;
-            border-color:var(--blue-i);
-            border-width: 0.5vh;
-            cursor: grab;
-        }
-        .btn-inactive{
-            background-color: white;
-            color: black;
-        }
-        .btn-inactive:hover{
-            background-color: var(--blue-i);
-            color: white;
-        }
-
-        .btn-active{
-            
-            background-color: var(--blue-i);
-            color: white;
-        }
-        .btn-active:hover{
-            background-color: white;
-            color: black;
-        }
-
-        .search-button{
-            width: 100%;
-            border-radius: 1vh;
-            border-style: solid;
-            border-color:var(--blue-i);
-            border-width: 0.5vh;
-            cursor: grab;
-        }
-
-        .main-content{
-            margin-left: 5%;
-            margin-right: 5%;
-            display: flex;
-            
-        }
-        .content-table{
-            width: 100%;
-            margin: 1vh;
-            font-size: 3vh;
-            border-collapse: collapse;
-        }
-        .content-table thead{
-            color: white;
-            background-color: var(--pruple-i);
-        }
-
-        .content-table thead th{
-            text-align: start;
-            padding: 1vh;
-        }
-
-        .content-table tbody td{
-            text-align: start;
-            padding: 1vh;
-        }
-        .content-table tbody tr:nth-child(even) {
-            /* s */
-            
-            border-bottom-style: solid;
-            border-top-style: solid;
-            border-width: 0.5vh;
-            border-color: var(--blue-i);
-            
-        }   
-
-        .content-table  tbody tr:hover {
-            background-color:var(--blue-i);
-            color: white;
-            cursor: grab;
-        }
 
     </style>
 </head>
 <body>
     <section class="content">
-        <h1 class="main-tittle">EL PODER DE SER TU MISM@</h1>
+        <h1 class="main-tittle">SERVICIO SOCIAL</h1>
         <div class="search-bar">
             <div class="option-filters">
                 <div class="top-filters">
-
-                    <button class="filter btn-filter btn-active">Activos</button>
+                    <select name="center" class="filter select-filter" id="cenSelect">
+                        <option disabled selected>Centro</option>
+                        <option value="Queso">LOMAS DE GUADALUPE</option>
+                        <option value="Queso">Queso</option>
+                    </select>
+                    <select name="generation" class="filter select-filter" id="genSelect">
+                        <option disabled selected>Generaci&oacute;n</option>
+                        <option value="Queso">Queso</option>
+                        <option value="Queso">Queso</option>
+                    </select>
+                    <button class="filter btn-filter btn-inactive">Activos</button>
                     <button class="filter btn-filter btn-inactive">Inactivos</button>
                 </div>
                 <div class="bot-filters">
-                    <input class="filter text-filter" type="text" placeholder="Nombre">
+                    <input class="filter text-filter" type="text" placeholder="Nombre, apellido, correo...">
                 </div>
 
             </div>

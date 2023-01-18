@@ -1,0 +1,84 @@
+.search-bar{
+    display: flex;
+}
+.option-filters{
+    width: 75%;
+    margin-left: 5%;
+}
+.submit{
+    display: flex;
+    width: 15%;
+    margin-right: 5%;
+}
+.top-filters{
+    display: flex;
+    justify-content: space-between;
+}
+.bot-filters{
+    display: flex;
+}
+.filter{
+    margin: 1vh;
+    padding: 1vh;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4vh;
+}
+
+.text-filter{
+    width: 100%;
+    border-radius: 1vh;
+    border-style: solid;
+    border-color:var(--pruple-i);
+    border-width: 0.5vh;
+}
+
+.btn-filter{
+    width: 25%;
+    border-radius: 1vh;
+    border-style: solid;
+    border-color:var(--blue-i);
+    border-width: 0.5vh;
+    cursor: grab;
+}
+.btn-inactive{
+    background-color: white;
+    color: black;
+}
+.btn-inactive:hover{
+    background-color: var(--blue-i);
+    color: white;
+}
+
+.btn-active{
+    
+    background-color: var(--blue-i);
+    color: white;
+}
+.btn-active:hover{
+    background-color: white;
+    color: black;
+}
+.select-filter{
+    width: 40%;
+    border-radius: 1vh;
+    border-style: solid;
+    border-color:var(--pruple-i);
+    border-width: 0.5vh;
+}
+.select-filter option{
+    background-color:var(--pruple-i);
+    color: white;
+}
+
+.select-filter option:disabled{
+    background-color:gray;
+    color: white;
+}
+.search-button{
+    width: 100%;
+    border-radius: 1vh;
+    border-style: solid;
+    border-color:var(--blue-i);
+    border-width: 0.5vh;
+    cursor: grab;
+}
